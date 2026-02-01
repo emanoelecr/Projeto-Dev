@@ -34,10 +34,35 @@
   background-repeat: no-repeat;
   background-position: center;
   min-height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+
 }
 
-#martina {
+#intro-content {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+
+}
+
+
+#emanoel {
   color: var(--red);
+}
+
+#emanoel-img {
+  color: var(--red);
+  border: 3px solid var(--red);
+  border-radius: 50%;
+  
 }
 
 span {

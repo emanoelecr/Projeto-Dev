@@ -18,7 +18,39 @@
 --gray-500:#16181D;
 --gray-600:#0D0E11;
 
+--title-lg: 700 56px/120%'Asap', sans-serif; /* h1 */
+--title-md: 700 24px/120%'Asap', sans-serif; /* h2 */
+--title-sm: 700 16px/120%'Asap', sans-serif; /* h3 */
+
+--subtitle: 400 20px/120%'Inconsolata', sans-serif; /* span */
+
+--text-md: 400 16px/140%'Maven Pro', sans-serif; /* p */
+--text-sm: 400 14px/140%'Maven Pro', sans-serif; /* p */
 }
 
 #intro {
+  background-image: url(./assets/Background_Intro.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+}
+
+#martina {
+  color: var(--red);
+}
+
+span {
+  font: var(--subtitle);
+  color: var(--gray-200);
+}
+
+h1 {
+  font: var(--title-lg);
+  color: var(--gray-100);
+}
+
+p {
+  font: var(--text-sm);
+  color: var(--gray-300);
 }

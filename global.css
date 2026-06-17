@@ -39,20 +39,28 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-
+  gap: 80px;
 
 }
 
-#intro-content {
+#text {
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 8px;
+  gap: 20px;
 
 }
 
+#header {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 56px;
+}
 
 #emanoel {
   color: var(--red);
@@ -62,7 +70,15 @@
   color: var(--red);
   border: 3px solid var(--red);
   border-radius: 50%;
-  
+  width: 96px;
+  height: 96px;
+}
+
+#avatar img:nth-of-type(2){
+  height: 32px;
+  width: 32px;
+  position: relative;
+  transform: translateX(-31px);
 }
 
 span {
@@ -78,4 +94,47 @@ h1 {
 p {
   font: var(--text-sm);
   color: var(--gray-300);
+}
+
+.container {
+  display: flex;
+  gap: 16px;
+}
+
+.container span {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--gray-400);
+  border-radius: 999px;
+  padding: 8px 16px;
+  gap: 8px;
+}
+
+.container img {
+  width: 24px;
+  height: 24px;
+  justify-content: center;
+  align-items: center;
+}
+
+.container p {
+  color: var(--gray-200);
+  font-size: var(--text-md);
+}
+
+button {
+  height: 32px;
+  width: 32px;
+  margin: 94px auto 57px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Acessibilidade */
+button:focus { 
+  outline: 2px solid #58a6ff;
+  outline-offset: 2px;
 }

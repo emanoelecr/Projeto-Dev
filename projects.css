@@ -37,6 +37,9 @@
     border-radius: 12px; 
     padding: 12px;
     align-items: center;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s ease;
 
     & img {
       border-radius: 12px;
@@ -55,6 +58,10 @@
       color: var(--gray-200);
     }
   }
+
+.project:hover {
+  transform: translateY(-4px);
+}
 
   .project-text {
   margin: 20px 0;

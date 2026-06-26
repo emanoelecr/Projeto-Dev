@@ -45,17 +45,26 @@
 
 #text {
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   text-align: center;
   gap: 20px;
+}
 
+#text > * {
+    width: 70%;
+}
+
+#title {
+    width: 70%;
 }
 
 #header {
   display: flex;
   flex-flow: column;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -89,6 +98,7 @@ span {
 h1 {
   font: var(--title-lg);
   color: var(--gray-100);
+  font-size: clamp(2rem, 8vw, 3.5rem);
 }
 
 p {
@@ -98,7 +108,10 @@ p {
 
 .container {
   display: flex;
+  flex-wrap: wrap;
   gap: 16px;
+  align-items: center;
+  justify-content: center;
 }
 
 .container span {

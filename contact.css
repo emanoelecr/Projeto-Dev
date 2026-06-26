@@ -17,6 +17,7 @@
   gap: 8px;
   box-sizing: border-box;
   padding-bottom: 3rem;
+  width: 70%;
 
   & h3 {
     color: var(--purple);
@@ -34,11 +35,20 @@
   }
 }
 
+.contact-links > * {
+  width: 80%;
+  max-width: 80%;
+}
+
 .contact-links {
   display: flex;
+  flex-wrap:wrap;
   flex-flow: column;
   gap: 16px;
   padding-bottom: 17.75rem;
+  justify-content: center;  
+  width: 90%;
+  align-items: center;
 
   & a {
     display: flex;
@@ -47,11 +57,12 @@
     border-radius: 8px;
     background-color: var(--gray-400);
     text-decoration: none;
- 
     text-align: justify;
     align-items: center;
-    width: 25rem;
-    padding: 23px 24px 23px 24px;
+    padding: 23px 24px;
+    width: 70%; 
+    transition: 0.2s ease;
+    
     
     & span {
       display: flex;

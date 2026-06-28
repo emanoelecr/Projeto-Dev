@@ -101,7 +101,7 @@ h1 {
   font-size: clamp(2rem, 8vw, 3.5rem);
 }
 
-p {
+#text p {
   font: var(--text-sm);
   color: var(--gray-300);
 }
